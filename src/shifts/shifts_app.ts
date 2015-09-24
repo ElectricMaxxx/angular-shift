@@ -1,4 +1,4 @@
-/// <reference path='../_all.ts' />
+/// <reference path='_all.ts' />
 
 /**
  * The main application file
