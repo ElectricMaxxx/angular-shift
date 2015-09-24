@@ -1,0 +1,39 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "rx/rx.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "angular2/angular2.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "restangular/restangular.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "rx/rx-lite.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    },
+    "angularjs/angular-mocks.d.ts": {
+      "commit": "0fff32b558aa91ba24cfca5479aba02e4ef2fafe"
+    }
+  }
+}

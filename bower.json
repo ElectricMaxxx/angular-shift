@@ -1,0 +1,18 @@
+{
+  "name": "angular-shifts",
+  "version": "0.0.1",
+  "authors": [
+    "electricmaxxx <maximilian.berghoff@mayflower.de>"
+  ],
+  "description": "shifts view for the engelsystem",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.4.5",
+    "bootstrap": "~3.3.5",
+    "angular-mocks": "1.4.*",
+    "lodash": "2.4.x",
+    "lodash-contrib": "241.4.x",
+    "restangular": "~1.4.0",
+    "angular-ui-calendar": "latest"
+  }
+}
