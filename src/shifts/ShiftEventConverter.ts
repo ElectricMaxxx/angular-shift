@@ -12,24 +12,9 @@ module angularShift.shifts {
             return  {
                 title: _.isUndefined(shift.title) ?  shift.shiftType: shift.title + '(' + shift.shiftType +  ')',
                 start: startDate,
-                end: endDate
+                end: endDate,
+                shiftValues: shift
             };
-        }
-
-        public manyToEvents(shifts: Array <ShiftInterface>): Array <FullCalendar.EventObject> {
-            var events = [];
-             _.each(shifts, (shift) => {
-                events.push(this.toEvent(shift));
-            });
-
-            return events;
-        }
-
-        public toShift(event: FullCalendar.EventObject): ShiftInterface {
-            var shift: ShiftInterface;
-
-
-            return shift;
         }
     }
 

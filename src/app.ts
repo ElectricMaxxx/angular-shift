@@ -13,11 +13,14 @@ module angularShift {
     angular
         .module('angularShift', [
             'restangular',
-            'angularShift.shifts'
-        ]
-    )
+            'angularShift.shifts',
+            'ui.router'
+        ])
         .config(function(RestangularProvider) {
             RestangularProvider.setEncodeIds(false);
             RestangularProvider.setBaseUrl('api');
+        })
+        .config(function($stateProvider, $urlRouterProvider) {
+            $urlRouterProvider.otherwise("/shifts");
         });
-};
+}

@@ -11,8 +11,9 @@ module angularShift.shifts {
         private eventSources: Array<FullCalendar.EventSource>;
         private shiftsService: ShiftsService;
         private converter: ShiftEventConverter;
+        private $state;
 
-        constructor(uiCalendarConfig, $scope, shiftsService: ShiftsService, converter: ShiftEventConverter) {
+        constructor(uiCalendarConfig, $scope, shiftsService: ShiftsService, converter: ShiftEventConverter, $state) {
             this.date = new Date();
             this.d = this.date.getDate();
             this.m = this.date.getMonth();
@@ -22,6 +23,7 @@ module angularShift.shifts {
             this.shiftsService = shiftsService;
             this.converter = converter;
             this.eventSources = [];
+            this.$state = $state;
 
             $scope.uiConfig = {
                 calendar:{
@@ -32,7 +34,9 @@ module angularShift.shifts {
                         center: 'title',
                         right: 'today prev,next'
                     },
-                    dayClick: $scope.alertEventOnClick,
+                    eventClick: (event) => {
+                        this.$state.go('shifts.edit', {id: event.shiftValues.SID});
+                    },
                     eventDrop: $scope.alertOnDrop,
                     eventResize: $scope.alertOnResize
                 }
@@ -52,7 +56,13 @@ module angularShift.shifts {
 
     }
 
-    ShiftsOnCalendarController.$inject = ['uiCalendarConfig', '$scope', 'ShiftsService', 'ShiftsEventConverterService'];
+    ShiftsOnCalendarController.$inject = [
+        'uiCalendarConfig',
+        '$scope',
+        'ShiftsService',
+        'ShiftsEventConverterService',
+        '$state'
+    ];
 
     angular.module('angularShift.shifts').controller('ShiftsOnCalendarController', ShiftsOnCalendarController);
 }
