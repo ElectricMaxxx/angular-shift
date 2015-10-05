@@ -9,6 +9,7 @@ module angularShift.shifts {
         SID: number;
         title: string;
         shifttype_id: number;
+        shiftType: string;
         start: number;
         end: number;
         RID: number;
@@ -19,4 +20,4 @@ module angularShift.shifts {
         edited_by_user_id: number;
         edited_at_timestamp: number;
     }
-};
+}

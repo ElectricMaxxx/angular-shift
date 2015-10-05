@@ -13,10 +13,7 @@ module angularShift {
     angular
         .module('angularShift', [
             'restangular',
-            'angularShift.shift',
-            'angularShift.shiftTypes',
-            'angularShift.shiftEntries',
-            'angularShift.locations'
+            'angularShift.shifts'
         ]
     )
         .config(function(RestangularProvider) {

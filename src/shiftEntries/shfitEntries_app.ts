@@ -7,9 +7,9 @@
  *
  * @type {angular.Module}
  */
-module angularShift.locations {
+module angularShift.shiftEntries {
     'use strict';
 
     angular
-        .module('angularShift.locations', ['restangular']);
+        .module('angularShift.shiftEntries', []);
 }

@@ -11,5 +11,5 @@ module angularShift.shiftTypes {
     'use strict';
 
     angular
-        .module('angularShift.shiftTypes', ['restangular']);
+        .module('angularShift.shiftTypes', []);
 }

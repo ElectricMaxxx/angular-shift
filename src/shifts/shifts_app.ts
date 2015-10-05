@@ -11,5 +11,5 @@ module angularShift.shifts {
     'use strict';
 
     angular
-        .module('angularShift.shifts', ['restangular']);
+        .module('angularShift.shifts', ['ui.calendar']);
 }
