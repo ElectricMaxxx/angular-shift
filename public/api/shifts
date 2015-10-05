@@ -13,5 +13,20 @@
     "created_at_timestamp": 1,
     "edited_by_user_id": 1,
     "edited_at_timestamp": 1
+  },
+  {
+    "SID": 2,
+    "title": "Second Shift",
+    "shifttype_id": 2,
+    "shiftType": "Type 2",
+    "start": 2,
+    "end": 2,
+    "RID": 1,
+    "URL": "",
+    "PSID" : 2,
+    "created_by_user_id": 1,
+    "created_at_timestamp": 1,
+    "edited_by_user_id": 1,
+    "edited_at_timestamp": 1
   }
 ]

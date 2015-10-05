@@ -42,8 +42,11 @@ module angularShift.shifts {
         }
 
         init () {
+            this.eventSources = [this.events];
             this.shiftsService.getAll().then((data) => {
-                this.eventSources = [this.converter.manyToEvents(data)];
+                _.each(data, (shift: ShiftInterface) => {
+                    this.events.push(this.converter.toEvent(shift))
+                });
             });
         }
 
