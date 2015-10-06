@@ -14,25 +14,48 @@ module angularShift.shifts {
         .module('angularShift.shifts', ['ui.calendar', 'ui.router'])
         .config(function($stateProvider) {
             $stateProvider
-                .state('shifts', {
-                    url: "/shifts",
+                .state({
+                    name: 'shifts',
+                    url: '/user_shifts',
+                    abstract: true,
+                    views: {content: {templateUrl: "partials/shifts/shifts.html"}}
+                })
+                .state({
+                    name: 'shifts.calendar',
+                    url: "/calendar",
                     views: {
-                        calendar: {
+                        main: {
                             templateUrl: "partials/shifts/calendar.html",
                             controller: "ShiftsOnCalendarController",
                             controllerAs: 'shiftsOnCalendar'
                         }
                     }
                 })
-                .state('shifts_edit', {
-                    url: "/shifts.edit/{id:int}",
+                .state({
+                    name: 'shifts.show',
+                    url: "/show/{id}",
                     views: {
-                        "shiftsEdit": {
-                            templateUrl: "partials/shifts/edit.html",
-                            controller: "ShiftsEditController",
-                            controllerAs: 'shiftsEdit'
+                        main: {
+                            templateUrl: "partials/shifts/show.html",
+                            controller: "ShiftsShowController",
+                            controllerAs: 'shiftShow'
                         }
                     }
+                })
+                .state({
+                    name: 'shifts.edit',
+                    url: "/edit/{id:int}",
+                    views: {
+                        edit: {
+                            templateUrl: "partials/shifts/edit.html",
+                            controller: "ShiftsEditController",
+                            controllerAs: 'shiftEdit'
+                        },
+                    }
+                })
+                .state({
+                    name: 'shifts.delete',
+                    url: "/delete/{id:int}"
                 })
             ;
         })

@@ -5,9 +5,6 @@ module angularShift.shifts {
 
     export class ShiftsService
     {
-        /**
-         * @var angularCmf.resource.PhpcrRepoResource
-         */
         private Resource;
 
         /**
@@ -15,11 +12,20 @@ module angularShift.shifts {
          */
         private Restangular;
 
-        static $inject = ['Restangular'];
+        /**
+         * @var angularShift.shiftEntries.ShiftEntriesService
+         */
+        private shiftEntriesService;
 
-        constructor(restangular: restangular.IElement) {
+        static $inject = ['Restangular', 'ShiftEntriesService'];
+
+        constructor(
+            restangular: restangular.IElement,
+            shiftEntriesService: angularShift.shiftEntries.ShiftEntriesService
+        ) {
             this.Resource = restangular.service('shifts');
             this.Restangular = restangular;
+            this.shiftEntriesService = shiftEntriesService;
         }
 
         /**

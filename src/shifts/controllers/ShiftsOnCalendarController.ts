@@ -9,11 +9,11 @@ module angularShift.shifts {
         private events: Array<FullCalendar.EventObject> = [];
         private uiCalendarConfig: FullCalendar.Options;
         private eventSources: Array<FullCalendar.EventSource>;
-        private shiftsService: ShiftsService;
+        private shiftsService: ShiftEntriesService;
         private converter: ShiftEventConverter;
         private $state;
 
-        constructor(uiCalendarConfig, $scope, shiftsService: ShiftsService, converter: ShiftEventConverter, $state) {
+        constructor(uiCalendarConfig, $scope, shiftsService: ShiftEntriesService, converter: ShiftEventConverter, $state) {
             this.date = new Date();
             this.d = this.date.getDate();
             this.m = this.date.getMonth();
@@ -35,7 +35,7 @@ module angularShift.shifts {
                         right: 'today prev,next'
                     },
                     eventClick: (event) => {
-                        this.$state.go('shifts_edit', {id: event.shiftValues.SID});
+                        this.$state.go('shifts.show', {id: event.shiftValues.SID});
                     },
                     eventDrop: $scope.alertOnDrop,
                     eventResize: $scope.alertOnResize

@@ -14,13 +14,15 @@ module angularShift {
         .module('angularShift', [
             'restangular',
             'angularShift.shifts',
+            'angularShift.shiftEntries',
             'ui.router'
         ])
         .config(function(RestangularProvider) {
             RestangularProvider.setEncodeIds(false);
             RestangularProvider.setBaseUrl('api');
+            RestangularProvider.setRequestSuffix('.json');
         })
         .config(function($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise("/shifts");
+            $urlRouterProvider.otherwise("/user_shifts/calendar");
         });
 }

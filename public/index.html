@@ -11,9 +11,7 @@
 <div class="panel panel-default" ng-app="angularShift">
     <div class="panel-heading">Shifts</div>
     <div class="panel-body">
-        <div class="container" ui-view="calendar"></div>
-
-        <div class="container" ui-view="shiftsEdit"></div>
+        <div class="container" ui-view="content"></div>
     </div>
 </div>
 
@@ -27,6 +25,8 @@
 <script type="text/javascript" src="../bower_components/fullcalendar/dist/gcal.js"></script>
 <script type="text/javascript" src="../bower_components/restangular/dist/restangular.min.js"></script>
 <script type="text/javascript" src="../bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 <script src="../src/shiftEntries/shfitEntries_app.js"></script>
 <script src="../src/shiftTypes/shfitTypes_app.js"></script>
@@ -38,5 +38,8 @@
 <script type="application/javascript" src="../src/shifts/services/ShiftEventConverter.js"></script>
 <script type="application/javascript" src="../src/shifts/controllers/ShiftsOnCalendarController.js"></script>
 <script type="application/javascript" src="../src/shifts/controllers/ShiftsEditController.js"></script>
+<script type="application/javascript" src="../src/shifts/controllers/ShiftsShowController.js"></script>
+
+<script type="application/javascript" src="../src/shiftEntries/ShiftEntriesService.js"></script>
 </body>
 </html>

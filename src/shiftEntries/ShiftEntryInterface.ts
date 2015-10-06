@@ -7,8 +7,8 @@ module angularShift.shiftEntries {
      */
     export interface ShiftEntryInterface {
         id : number;
-        SID: number;
-        TID : number;
+        shift: angularShift.shifts.ShiftInterface;
+        angelType : angularShift.neededAngels.AngelType;
         UID : number;
         Comment: string;
         freeload_comment:string;

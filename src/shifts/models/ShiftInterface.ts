@@ -8,11 +8,12 @@ module angularShift.shifts {
     export interface ShiftInterface {
         SID: number;
         title: string;
-        shifttype_id: number;
-        shiftType: string;
+        shiftType: angularShift.shiftTypes.ShiftTypeInterface;
+        neededAngelTypes: angularShift.neededAngels.NeededAngelInterface;
         start: number;
         end: number;
-        RID: number;
+        location: angularShift.locations.LocationInterface;
+        shiftEntries: Array<angularShift.shiftEntries.ShiftEntryInterface>
         URL: string;
         PSID : number;
         created_by_user_id: number;

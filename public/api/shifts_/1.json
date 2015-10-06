@@ -1,0 +1,23 @@
+{
+  "SID": 1,
+  "title": "First Shift",
+  "shiftType": { "id": 1, "name": "Type 1", "angelType": {}},
+  "location": { "id": 1, "name": "Example location"},
+  "neededAngelTypes": [
+    {"id": 1, "location": {}, "angelType": {"id": 1, "name": "Example Type"}, "count": 4},
+    {"id": 2, "location": {}, "angelType": {"id": 2, "name": "Example Type 2"}, "count": 5}
+  ],
+  "shiftEntries": [
+    {"id": 1, "shift": {"id": 1}, "angelType": {"id": 1, "name": "Example Type"}, "UID": 1},
+    {"id": 2, "shift": {"id": 1}, "angelType": {"id": 1, "name": "Example Type"}, "UID": 2}
+  ],
+  "start": 1,
+  "end": 1,
+  "RID": 1,
+  "URL": "",
+  "PSID" : 1,
+  "created_by_user_id": 1,
+  "created_at_timestamp": 1,
+  "edited_by_user_id": 1,
+  "edited_at_timestamp": 1
+}

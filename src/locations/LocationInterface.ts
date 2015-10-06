@@ -5,7 +5,7 @@ module angularShift.locations {
     /**
      * The interface for the locations we are getting from the api.
      */
-    export interface LocoationInterface {
+    export interface LocationInterface {
         RID : number;
         Name: string;
         Man: string;

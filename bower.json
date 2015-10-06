@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.4.5",
-    "bootstrap": "~3.3.5",
+    "bootstrap": "latest",
     "angular-mocks": "1.4.*",
     "lodash": "2.4.x",
     "lodash-contrib": "241.4.x",

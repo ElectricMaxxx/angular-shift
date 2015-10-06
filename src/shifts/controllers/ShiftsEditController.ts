@@ -4,7 +4,7 @@ module angularShift.shifts {
     export class ShiftsEditController {
         public text: string;
         constructor () {
-            this.text = "Lore ipsum und so weiter";
+            this.text = 'Edit a shift it self';
         }
     }
 
