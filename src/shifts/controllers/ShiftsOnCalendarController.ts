@@ -1,4 +1,4 @@
-/// <reference path='_all.ts' />
+/// <reference path='../_all.ts' />
 
 module angularShift.shifts {
     export class ShiftsOnCalendarController {
@@ -35,7 +35,7 @@ module angularShift.shifts {
                         right: 'today prev,next'
                     },
                     eventClick: (event) => {
-                        this.$state.go('shifts.edit', {id: event.shiftValues.SID});
+                        this.$state.go('shifts_edit', {id: event.shiftValues.SID});
                     },
                     eventDrop: $scope.alertOnDrop,
                     eventResize: $scope.alertOnResize

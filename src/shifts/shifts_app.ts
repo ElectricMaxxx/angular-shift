@@ -25,7 +25,7 @@ module angularShift.shifts {
                     }
                 })
                 .state('shifts_edit', {
-                    url: "/shifts/edit/{id:int}",
+                    url: "/shifts.edit/{id:int}",
                     views: {
                         "shiftsEdit": {
                             templateUrl: "partials/shifts/edit.html",

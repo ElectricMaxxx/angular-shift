@@ -3,9 +3,8 @@
 /// <reference path='../../typings/restangular/restangular.d.ts' />
 /// <reference path='../../typings/fullCalendar/fullCalendar.d.ts' />
 
-/// <reference path='ShiftsService.ts' />
-/// <reference path='ShiftInterface.ts' />
-/// <reference path='ShiftResource.ts' />
-/// <reference path='ShiftEventConverter.ts' />
-/// <reference path='ShiftsOnCalendarController' />
-
+/// <reference path='services/ShiftsService.ts' />
+/// <reference path='models/ShiftInterface.ts' />
+/// <reference path='services/ShiftEventConverter.ts' />
+/// <reference path='controllers/ShiftsOnCalendarController' />
+/// <reference path='controllers/ShiftsEditController' />
