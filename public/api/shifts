@@ -2,8 +2,15 @@
   {
     "SID": 1,
     "title": "First Shift",
-    "shifttype_id": 1,
-    "shiftType": "Type 1",
+    "shiftType": { "id": 1, "name": "Type 1", "angelType": {}},
+    "location": { "id": 1, "name": "Example location"},
+    "neededAngelTypes": [
+      {"id": 1, "location": {}, "angelType": {"id": 1}, "count": 4}
+    ],
+    "shiftEntries": [
+      {"id": 1, "shift": {"id": 1}, "angelType": {"id": 1}, "UID": 1},
+      {"id": 2, "shift": {"id": 1}, "angelType": {"id": 1}, "UID": 2}
+    ],
     "start": 1,
     "end": 1,
     "RID": 1,
