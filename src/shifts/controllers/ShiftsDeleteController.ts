@@ -1,7 +1,7 @@
 /// <reference path='../_all.ts' />
 
 module angularShift.shifts {
-    export class ShiftsEditController {
+    export class ShiftsDeleteController {
         private notificationService: angularShift.utils.NotificationService;
         private $state;
 
@@ -15,11 +15,11 @@ module angularShift.shifts {
             var shiftid = this.$state.params.id;
             this.notificationService.warning(
                 'WORK IN PROGRESS',
-                'This feature isn`t implemented yet. Use <a href="/?p=user_shifts&edit_shift=' + shiftid + '">Link (edit shift)</a> instead'
+                'This feature isn`t implemented yet. Use <a href="/?user_shifts&shift_delete=' + shiftid + '">Link (delete shift)</a> instead'
             );
         }
     }
-    ShiftsEditController.$inject = ['NotificationService', '$state'];
+    ShiftsDeleteController.$inject = ['NotificationService', '$state'];
 
-    angular.module('angularShift.shifts').controller('ShiftsEditController', ShiftsEditController);
+    angular.module('angularShift.shifts').controller('ShiftsDeleteController', ShiftsDeleteController);
 }

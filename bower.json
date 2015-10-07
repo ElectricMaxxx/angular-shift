@@ -14,6 +14,9 @@
     "lodash-contrib": "241.4.x",
     "restangular": "~1.4.0",
     "angular-ui-calendar": "latest",
-    "angular-ui-router": "angular-ui/ui-router#~0.2.15"
+    "angular-ui-router": "angular-ui/ui-router#~0.2.15",
+    "bootbox": "4.4.x",
+    "angular-bootstrap": "0.13.x",
+    "angular-toastr": "1.5.x"
   }
 }

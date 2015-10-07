@@ -15,7 +15,9 @@ module angularShift {
             'restangular',
             'angularShift.shifts',
             'angularShift.shiftEntries',
-            'ui.router'
+            'angularShift.utils.notification',
+            'ui.router',
+            'toastr'
         ])
         .config(function(RestangularProvider) {
             RestangularProvider.setEncodeIds(false);

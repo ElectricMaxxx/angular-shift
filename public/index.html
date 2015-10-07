@@ -5,10 +5,13 @@
     <title>Shifts on Calendar</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css"/>
+    <link rel="stylesheet" href="../bower_components/angular-toastr/dist/angular-toastr.css" />
 </head>
-<body>
+<body ng-app="angularShift">
 
-<div class="panel panel-default" ng-app="angularShift">
+<div class="toastr-container" id="toast-container"></div>
+
+<div class="panel panel-default">
     <div class="panel-heading">Shifts</div>
     <div class="panel-body">
         <div class="container" ui-view="content"></div>
@@ -21,12 +24,15 @@
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script type="text/javascript" src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
+<script type="text/javascript" src="../bower_components/angular-toastr/dist/angular-toastr.min.js"></script>
 <script type="text/javascript" src="../bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 <script type="text/javascript" src="../bower_components/fullcalendar/dist/gcal.js"></script>
 <script type="text/javascript" src="../bower_components/restangular/dist/restangular.min.js"></script>
 <script type="text/javascript" src="../bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
 <script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/bootbox/bootbox.js"></script>
 
 <script src="../src/shiftEntries/shfitEntries_app.js"></script>
 <script src="../src/shiftTypes/shfitTypes_app.js"></script>
@@ -41,5 +47,7 @@
 <script type="application/javascript" src="../src/shifts/controllers/ShiftsShowController.js"></script>
 
 <script type="application/javascript" src="../src/shiftEntries/ShiftEntriesService.js"></script>
+
+<script type="application/javascript" src="../src/utils/NotificationService.js"></script>
 </body>
 </html>
