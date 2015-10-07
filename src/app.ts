@@ -16,6 +16,7 @@ module angularShift {
             'angularShift.shifts',
             'angularShift.shiftEntries',
             'angularShift.utils.notification',
+            'angularShift.utils.Confirmation',
             'ui.router',
             'toastr'
         ])

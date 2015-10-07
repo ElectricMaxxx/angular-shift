@@ -53,10 +53,6 @@ module angularShift.shifts {
                         },
                     }
                 })
-                .state({
-                    name: 'shifts.delete',
-                    url: "/delete/{id:int}"
-                })
             ;
         })
     ;

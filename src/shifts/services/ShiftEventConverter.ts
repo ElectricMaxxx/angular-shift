@@ -10,7 +10,7 @@ module angularShift.shifts {
             endDate.setMilliseconds(endDate.getMilliseconds() + 60*60*1000*3);
             // endDate.setTime(shift.end * 1000);
             return  {
-                title: _.isUndefined(shift.title) ?  shift.shiftType: shift.title + '(' + shift.shiftType +  ')',
+                title: !_.isUndefined(shift.title) ?  shift.title + '(' + shift.shiftType.name +  ')' : shift.shiftType.name,
                 start: startDate,
                 end: endDate,
                 shiftValues: shift
