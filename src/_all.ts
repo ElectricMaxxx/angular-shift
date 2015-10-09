@@ -8,6 +8,8 @@
 /// <reference path='../typings/es6-promise/es6-promise.d.ts' />
 /// <reference path='../typings/jquery/jquery.d.ts' />
 /// <reference path='../typings/bootbox/bootbox.d.ts' />
+/// <reference path='utils/ConfirmationService.ts' />
+/// <reference path='utils/NotificationService.ts' />
 
 
 
