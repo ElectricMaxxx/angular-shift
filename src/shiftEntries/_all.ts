@@ -4,4 +4,4 @@
 /// <reference path='ShiftEntryInterface.ts' />
 
 /// <reference path='../shifts/models/ShiftInterface.ts' />
-/// <reference path='../neededAngels/AngelTypeInterface.ts' />
+/// <reference path='../neededAngels/models/AngelTypeInterface.ts' />

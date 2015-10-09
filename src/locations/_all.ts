@@ -4,4 +4,4 @@
 /// <reference path="LocationEditController.ts" />
 /// <reference path="LocationsService" />
 
-/// <reference path="../neededAngels/neededAngelInterface.ts" />
+/// <reference path="../neededAngels/models/NeededAngelTypeInterface.ts" />

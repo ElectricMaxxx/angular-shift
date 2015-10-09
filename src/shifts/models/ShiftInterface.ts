@@ -9,7 +9,7 @@ module angularShift.shifts {
         SID: number;
         title: string;
         shiftType: angularShift.shiftTypes.ShiftTypeInterface;
-        neededAngelTypes: angularShift.neededAngels.NeededAngelInterface;
+        neededAngelTypes: angularShift.neededAngels.NeededAngelTypeInterface;
         start: number;
         end: number;
         location: angularShift.locations.LocationInterface;

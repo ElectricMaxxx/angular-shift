@@ -3,7 +3,7 @@
 /// <reference path='../shiftEntries/ShiftEntriesService.ts' />
 /// <reference path='../shiftEntries/ShiftEntryInterface.ts' />
 /// <reference path='../shiftTypes/ShiftTypeInterface.ts' />
-/// <reference path='../neededAngels/NeededAngelInterface.ts' />
+/// <reference path='../neededAngels/models/NeededAngelTypeInterface.ts' />
 /// <reference path='../utils/NotificationService.ts' />
 /// <reference path='../utils/ConfirmationService.ts' />
 
