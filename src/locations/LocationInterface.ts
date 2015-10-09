@@ -12,8 +12,6 @@ module angularShift.locations {
         FromPentabarf: string;
         show: string;
         Number: number;
-        location: string;
-        lat: string;
-        long: string;
+        neededAngelTypes: Array<angularShift.neededAngels.NeededAngelInterface>;
     };
 };

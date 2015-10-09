@@ -15,6 +15,7 @@ module angularShift {
             'restangular',
             'angularShift.shifts',
             'angularShift.shiftEntries',
+            'angularShift.locations',
             'angularShift.shiftTypes',
             'angularShift.utils.notification',
             'angularShift.utils.Confirmation',

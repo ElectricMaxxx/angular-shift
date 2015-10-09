@@ -1,0 +1,11 @@
+{
+  "RID":"1",
+  "Name":"Example location",
+  "Man":"bla",
+  "FromPentabarf":"",
+  "show":true,
+  "Number":"10",
+  "neededAngelTypes": [
+    {"id": 1, "location": {}, "angelType": {"id": 1, "name": "Example Type"}, "count": 9}
+  ]
+}
